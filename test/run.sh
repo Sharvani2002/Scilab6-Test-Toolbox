@@ -1,8 +1,9 @@
 #!/bin/bash
 
-#create an executable and name it as "execute"
+#compile the two files separately and link them 
+#all together to one executable file "execute"
 gcc main.c trans.c -o execute
-#execute the compiled code
+#run the executable
 ./execute
 #remove the executable
 rm execute
