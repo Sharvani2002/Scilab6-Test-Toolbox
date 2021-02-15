@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "trans.h"
-#include "trans.c"
+
 int main(void)
 {	
 	int m,n;
