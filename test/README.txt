@@ -1,1 +1,15 @@
-This directory is a library source for a simple multiplication function defined in C. See mul.c file for the program. The "run.sh" shell script can be used to compile this C program into a shared object file (.so file) on a Linux system. On Windows OS, follow the instructions given inside the windows-compile.txt file. This directory also contains a compiled and ready-to-use library inside the "thirdparty" directory. This "thirdparty" directory has to be used along with the Scilab test_toolbox that can be found at: https://github.com/FOSSEE/Scilab6-Test-Toolbox
+OS version: Ubuntu 18.04.4
+Scilab version: Scilab 6.1.0
+
+This directory contains:
+
+trans.c:  C function that computes transpose of a n x m matrix
+main.c:  calls the C function transpose in trans.c
+trans.h: header file for transpose function in trans.c
+run.sh: shell script to compile and execute the main.c file(which in turn executes trans.c)
+
+Enter the command on the terminal to run the shell script file:
+
+./run.sh
+
+
