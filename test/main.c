@@ -3,35 +3,38 @@
 #include "trans.h"
 #include "trans.c"
 int main(void)
-{	int m,n;
-	//Defining the input matrix (1x3)
-	m=n=3;
-	double *matrix, *transpose_matrix;
-	matrix = malloc(n*m * sizeof(*matrix));
-	transpose_matrix = malloc(m*n * sizeof(*transpose_matrix));
-	// matrix = {1,2,3};
+{	
+	int m,n;
+	printf("Enter the number of rows of the matrix: ");
+	scanf("%d", &n);
+	printf("Enter the number of columns of the matrix: ");
+	scanf("%d", &m);
+	double element;
+	double matrix[n*m], transpose_matrix[m*n];
+
 	for(int i=0; i<n; i++){
+		printf("\nEnter the values of row %d:\n", i+1);
 		for(int j=0; j<m; j++){
-			matrix[i*n+j] = j;
+			scanf("%lf", &element);
+			matrix[i*m+j] = element;
 		}
 	}
-	//Defining the output matrix (3x1)
 	//The input_matrix has dimension nxm
-	//Calling the trans function
+	//Calling the trans function to obtain it's transpose
 	transpose(matrix, transpose_matrix, n, m);
 	//Printing the input_matrix
-	printf("\nInput matrix: \n");
+	printf("\nInput matrix you entered is: \n");
 	for(int i= 0; i<n; i++){
 		for(int j=0; j<m; j++){
-			printf("%f ", matrix[n*i + j]);
+			printf("%lf ", matrix[m*i + j]);
 		}printf("\n");
 	}
 	//Printing the output matrix 
 	//which is the transpose of input matrix
-	printf("\n\nTranspose of input matrix: \n");
+	printf("\n\nTranspose of the input matrix is: \n");
 	for(int i= 0; i<m; i++){
 		for(int j=0; j<n; j++){
-			printf("%f ", transpose_matrix[m*i + j]);
+			printf("%lf ", transpose_matrix[i*n + j]);
 		}printf("\n");
 	}
 

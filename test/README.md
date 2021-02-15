@@ -12,4 +12,3 @@ Enter the command on the terminal to run the shell script file:
 
 ./run.sh
 
-

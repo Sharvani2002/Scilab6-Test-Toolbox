@@ -1,2 +1,3 @@
-gcc main.c -o testop
-./testop
+gcc main.c -o main
+./main
+rm main
