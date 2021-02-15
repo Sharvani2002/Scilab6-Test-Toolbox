@@ -12,9 +12,9 @@ bash: GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
 - trans.c:  C function that computes transpose of a n x m matrix
 - main.c:  calls the C function transpose in trans.c
 - trans.h: header file for transpose function in trans.c
-- run.sh: shell script to compile and execute the main.c file(which in turn executes trans.c)
+- run.sh: shell script to compile and execute the trans.c and main.c file
 
-Enter the command(run the script file) on the terminal to execute the files:
+Enter the command(run the script file) on the terminal to execute the file:
 
 `./run.sh`
 
