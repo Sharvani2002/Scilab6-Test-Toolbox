@@ -1,23 +1,17 @@
+#### Versions of some components in my system:
 
-Part A:
+OS: Ubuntu 18.04.5 LTS<br>
+Scilab: Scilab 6.1.0<br>
+gcc: gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0<br>
+bash: GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)<br>
 
-The test folder is created and contains the following files:
+### Part A:
 
-main.c, trans.c, run.sh and trans.h
-
-OS used: Ubuntu 18.04.5 LTS
-
-Scilab version: Scilab 6.1.0
-
+The test folder is created and contains the following files:<br>
+main.c, trans.c, run.sh and trans.h<br>
 (further details in the test folder)
-
 <br>
 
-
-This repository is a test toolbox for Scilab. It requires "thirdparty" directory which can be downloaded as "external-library.zip" file from the page: https://scilab.in/fossee-scilab-toolbox. The "thirdparty" directory contains compiled library for a simple "multiplication" function written in C. After copying the "thirdparty" directory to the toolbox directory, on the scilab console run "exec builder.sce" to build the toolbox and then run "exec loader.sce" to load the toolbox.  Type "help" in the scilab console and browse through the help content of "test_toolbox". The external-library.zip file also contains separate instructions to work with MinGW on Windows OS.
-
-This toolbox overall demonstrates
-1. How to add a function defined in C in scilab
-2. How to add a function defined in Scilab in Scilab
-3. How to write help for the added functions
-4. How to create a toolbox out of the above functions.
+### Part B:
+This repository is a test toolbox for Scilab.
+The "thirdparty" directory contains compiled library for a "transpose" function written in C. After cloning this directory go to this location, on the scilab console run "exec builder.sce" to build the toolbox and then run "exec loader.sce" to load the toolbox.  Type "help" in the scilab console and browse through the help content of "test_toolbox".
