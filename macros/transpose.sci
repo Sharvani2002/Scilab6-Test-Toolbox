@@ -15,13 +15,11 @@ function [y] = transpose()
     //   Calls a transpose function defined in C with given inputs and returns the expected result
     //
     //   Syntax
-    //   transpose_matrix = transpose(matrix, n, m)
+    //   transpose_matrix = transpose(matrix)
     //   
     //   Parameters
     //   transpose_matrix : ouput with m x n dimension
     //   matrix : matrix to be transposed with n x m dimension
-    //   n : first dimension(number of rows of the matrix)
-    //   m : second dimension(number of columns of the matrix)
     //   
     //   Description
     //   This function accepts accepts a matrix and finds its transpose
@@ -29,7 +27,7 @@ function [y] = transpose()
     //
     // Examples 
     // // Transposing a matrix
-    // transpose_matrix = transpose([1,2,3;4,5,6], 2, 3)
+    // transpose_matrix = transpose([1,2,3;4,5,6])
 	//
 // Authors
 // Sharvani Laxmi Somayaji

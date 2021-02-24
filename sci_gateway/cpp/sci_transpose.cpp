@@ -33,9 +33,9 @@ int sci_transpose(scilabEnv env, int nin, scilabVar* in, int nopt, scilabOpt* op
 	double* transpose_matrix = NULL;
 	double* matrix = NULL;
   
-if (nin < 3)
+if (nin != 1)
     {
-        Scierror(77, _("%s: Wrong number of input argument(s): %d expected.\n"), fname, 3);
+        Scierror(77, _("%s: Wrong number of input argument(s): %d expected.\n"), fname, 1);
         return 1;
     }
 

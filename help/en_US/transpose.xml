@@ -24,7 +24,7 @@
 <refsynopsisdiv>
    <title>Syntax</title>
    <synopsis>
-   transpose_matrix = transpose(matrix, n, m)
+   transpose_matrix = transpose(matrix)
    
    </synopsis>
 </refsynopsisdiv>
@@ -39,14 +39,6 @@
         <varlistentry>
             <term>matrix :</term>
             <listitem><para> matrix to be transposed with n x m dimension</para></listitem>
-        </varlistentry>
-        <varlistentry>
-            <term>n :</term>
-            <listitem><para> first dimension(number of rows of the matrix)</para></listitem>
-        </varlistentry>
-        <varlistentry>
-            <term>m :</term>
-            <listitem><para> second dimension(number of columns of the matrix)</para></listitem>
         </varlistentry>
    </variablelist>
 </refsection>
@@ -66,7 +58,7 @@ This function accepts accepts a matrix and finds its transpose
    <title>Examples</title>
    <programlisting role="example"><![CDATA[
 // Transposing a matrix
-transpose_matrix = transpose([1,2,3;4,5,6], 2, 3)
+transpose_matrix = transpose([1,2,3;4,5,6])
 
    ]]></programlisting>
 </refsection>
