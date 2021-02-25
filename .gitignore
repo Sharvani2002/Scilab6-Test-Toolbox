@@ -8,5 +8,5 @@
 *.la
 *.out
 *.o
-thirdparty/
+
 
