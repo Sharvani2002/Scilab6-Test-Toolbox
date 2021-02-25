@@ -17,7 +17,18 @@ int transpose(double* matrix, double* transpose_matrix, int n, int m){
 			//transpose_matrix[j][i] = matrix[i][j]
 			//Also, matrix[i][j] in 2D= matrix[i*m+j] in 1D
 			//And transpose_matrix[j][i] in 2D= transpose_matrix[j*n+i] in 1D
-			transpose_matrix[j*n+i] = matrix[i*m+j];
+			
+			//Note:
+			//This is what I tried initially in the part A which worked
+			// fine just as a C program:
+			// transpose_matrix[j*n+i] = matrix[i*m+j];
+
+			//But mostly sciab stored the 2d arrays as 1d using
+			//the "scilab_getDoubleArray" in sci_transpose.cpp in scilab gateway folder
+			//as column wise order and not row wise order, after trying,
+			//this works fine in scilab:
+			transpose_matrix[i*m+j] = matrix[j*n+i];
+
 		}
 	}
  return 0;
