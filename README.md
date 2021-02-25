@@ -18,7 +18,7 @@ main.c, trans.c, run.sh and trans.h<br>
 #### About this repository:
 - This repository is a test toolbox for Scilab.
 - The "thirdparty" directory contains compiled library for a "transpose" function written in C.
-- Scilab gateway contains function, written in C++, that wraps the native function(transpose) so that it can be called from Scilab as a primitive
+- sci_gateway contains function, written in C++, that wraps the native function(transpose) so that it can be called from Scilab as a primitive
 - Builder files (Scilab script) used to build the module i.e. to create a binary version which Scilab can load from a source version.
 - Loader files (Scilab script) load a toolbox component (or the whole toolbox) in Scilab.
 - "help" folder contains XML help files
@@ -27,15 +27,19 @@ main.c, trans.c, run.sh and trans.h<br>
 
 #### Instructions for excecuting:
 - After cloning this directory, open scilab and go to the location of the cloned folder
-- As this cloned repository was already loaded, run these commands to unload the toolbox, unlink any linked files, clean the directory (as scilab will not allow building a toolbox that is already loaded in the workspace):
+- To load the toolbox:
+  - Run `exec loader.sce` to load the toolbox. It should load it without any errors.
+- If the above step gives any error for some reason, build and exceute the toolbox(donot follow this step if above step is done successfully):
+  - As this cloned repository was already loaded, run these commands to unload the toolbox, unlink any linked files, clean the directory (as scilab will not allow building a toolbox that is already loaded in the workspace):
   ```
   exec unloader.sce
   exec cleaner.sce
   ulink
   clear
   ```
-- Run `exec builder.sce` to build the toolbox
-- Run `exec loader.sce` to load the toolbox
+  - Run `exec builder.sce` to build the toolbox
+  - Run `exec loader.sce` to load the toolbox
+
 - Type `help` in the scilab console and browse through the help content of "test_toolbox" to get more details about the "transpose" function.
 - Run the function `y = transpose(x)` where x is supposed to be 1 or 2 dimensional matrix (although it will also accept a scalar and few other types)
 - Example for using the transpose function:
