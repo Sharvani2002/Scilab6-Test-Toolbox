@@ -1,3 +1,4 @@
+## Scilab Toolbox to compute the transpose of a given nxm matrix
 #### Versions of some components in my system:
 
 OS: Ubuntu 18.04.5 LTS<br>
@@ -14,9 +15,15 @@ main.c, trans.c, run.sh and trans.h<br>
 
 ### Part B:
 
-#### Contents of this repository:
-This repository is a test toolbox for Scilab.
-The "thirdparty" directory contains compiled library for a "transpose" function written in C.
+#### About this repository:
+- This repository is a test toolbox for Scilab.
+- The "thirdparty" directory contains compiled library for a "transpose" function written in C.
+- Scilab gateway contains function, written in C++, that wraps the native function(transpose) so that it can be called from Scilab as a primitive
+- Builder files (Scilab script) used to build the module i.e. to create a binary version which Scilab can load from a source version.
+- Loader files (Scilab script) load a toolbox component (or the whole toolbox) in Scilab.
+- "help" folder contains XML help files
+- "test" folder contains the files for Part A
+- The toolbox has been tested on linux sytsem(Ubuntu 18.04.5 LTS)
 
 #### Instructions for excecuting:
 - After cloning this directory, open scilab and go to the location of the cloned folder
