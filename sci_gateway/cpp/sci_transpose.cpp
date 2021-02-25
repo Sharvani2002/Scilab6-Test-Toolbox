@@ -44,16 +44,18 @@ if (nout != 1)
         Scierror(77, _("%s: Wrong number of output argument(s): %d expected.\n"), fname, 1);
         return 1;
     }
-    // scilab_getDoubleArray(env, in[1], &n);
-    // scilab_getDoubleArray(env, in[2], &m);
+
     size1 = scilab_getDim2d(env, in[0], &n, &m);
     scilab_getDoubleArray(env, in[0], &matrix);
+
     out[0] = scilab_createDoubleMatrix2d(env, m, n,0);
+
     scilab_getDoubleArray(env, out[0], &transpose_matrix);
 
+    transpose(matrix, transpose_matrix, n, m);
 
-		transpose(matrix, transpose_matrix, n, m);
 
+    
     return 0;
 }
 }
