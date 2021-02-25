@@ -27,15 +27,19 @@ main.c, trans.c, run.sh and trans.h<br>
 
 #### Instructions for excecuting:
 - After cloning this directory, open scilab and go to the location of the cloned folder
-- As this cloned repository was already loaded, run these commands to unload the toolbox, unlink any linked files, clean the directory (as scilab will not allow building a toolbox that is already loaded in the workspace):
+- To load the toolbox:
+  - Run `exec loader.sce` to load the toolbox
+- If the above step gives any error for some reason:
+  - As this cloned repository was already loaded, run these commands to unload the toolbox, unlink any linked files, clean the directory (as scilab will not allow building a toolbox that is already loaded in the workspace):
   ```
   exec unloader.sce
   exec cleaner.sce
   ulink
   clear
   ```
-- Run `exec builder.sce` to build the toolbox
-- Run `exec loader.sce` to load the toolbox
+  - Run `exec builder.sce` to build the toolbox
+  - Run `exec loader.sce` to load the toolbox
+
 - Type `help` in the scilab console and browse through the help content of "test_toolbox" to get more details about the "transpose" function.
 - Run the function `y = transpose(x)` where x is supposed to be 1 or 2 dimensional matrix (although it will also accept a scalar and few other types)
 - Example for using the transpose function:
