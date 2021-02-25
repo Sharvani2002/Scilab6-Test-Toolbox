@@ -27,7 +27,7 @@ main.c, trans.c, run.sh and trans.h<br>
 
 #### Instructions for excecuting:
 - After cloning this directory, open scilab and go to the location of the cloned folder
-- As this cloned repository was already loaded, run these commands to unload the toolbox, unlink any linked files, clean the directory:
+- As this cloned repository was already loaded, run these commands to unload the toolbox, unlink any linked files, clean the directory (as scilab will not allow building a toolbox that is already loaded in the workspace):
   ```
   exec unloader.sce
   exec cleaner.sce
