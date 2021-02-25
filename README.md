@@ -26,12 +26,13 @@ main.c, trans.c, run.sh and trans.h<br>
 - The toolbox has been tested on linux sytsem(Ubuntu 18.04.5 LTS)
 
 #### Instructions for testing/executing:
-- After cloning this directory, open scilab and go to the location of the cloned folder
+- Clone this repository, "Scilab6-Test-Toolbox" (using `git clone <link>`)
 - To get thirdparty folder:
   - The "thirdparty" folder wont get downloaded as it is ignored by git (present in .gitignore). If it is present in the cloned repository(i.e. "Scilab6-Test-Toolbox"), "delete" it (as the .so files could not be compatible). 
   - Go to this <a href="https://drive.google.com/drive/folders/1cPSwouT3ZEtdJgaLvqsJffAO5nwxt9m1?usp=sharing" >link</a> and download the "external-library-Sharvani2002" folder.
   - Enter the location of this folder on the terminal and run the commands `chmod +x *` (to give permissions) and  `./run.sh` to create and copy the "libtrans.so" and "trans.h" files to the "thirdparty" folder.
   - Now, copy the "thirdparty" folder and paste it in the cloned repository(i.e. "Scilab6-Test-Toolbox")
+- Open scilab and go to the location of the cloned folder
 - To load the toolbox:
   - Run `exec loader.sce` to load the toolbox. It should load it without any errors.
 - If the above step gives any error for some reason, build and exceute the toolbox(donot follow this step if above step is done successfully):
