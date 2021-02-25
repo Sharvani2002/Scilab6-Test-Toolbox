@@ -25,7 +25,7 @@ main.c, trans.c, run.sh and trans.h<br>
 - "test" folder contains the files for Part A
 - The toolbox has been tested on linux sytsem(Ubuntu 18.04.5 LTS)
 
-#### Instructions for excecuting:
+#### Instructions for testing/executing:
 - After cloning this directory, open scilab and go to the location of the cloned folder
 - To get thirdparty folder:
   - The "thirdparty" folder wont get downloaded as it is ignored by gitignore. So go to this <a href="https://drive.google.com/drive/folders/1cPSwouT3ZEtdJgaLvqsJffAO5nwxt9m1?usp=sharing" >link</a> and download the "external-library-Sharvani2002" folder.
