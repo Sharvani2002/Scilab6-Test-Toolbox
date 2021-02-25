@@ -28,7 +28,8 @@ main.c, trans.c, run.sh and trans.h<br>
 #### Instructions for testing/executing:
 - After cloning this directory, open scilab and go to the location of the cloned folder
 - To get thirdparty folder:
-  - The "thirdparty" folder wont get downloaded as it is ignored by gitignore. If it is present in the cloned repository(i.e. "Scilab6-Test-Toolbox"), "delete" it (as the .so files could not be compatible). Go to this <a href="https://drive.google.com/drive/folders/1cPSwouT3ZEtdJgaLvqsJffAO5nwxt9m1?usp=sharing" >link</a> and download the "external-library-Sharvani2002" folder.
+  - The "thirdparty" folder wont get downloaded as it is ignored by git (present in .gitignore). If it is present in the cloned repository(i.e. "Scilab6-Test-Toolbox"), "delete" it (as the .so files could not be compatible). 
+  - Go to this <a href="https://drive.google.com/drive/folders/1cPSwouT3ZEtdJgaLvqsJffAO5nwxt9m1?usp=sharing" >link</a> and download the "external-library-Sharvani2002" folder.
   - Enter the location of this folder on the terminal and run the commands `chmod +x *` (to give permissions) and  `./run.sh` to create and copy the "libtrans.so" and "trans.h" files to the "thirdparty" folder.
   - Now, copy the "thirdparty" folder and paste it in the cloned repository(i.e. "Scilab6-Test-Toolbox")
 - To load the toolbox:
