@@ -61,5 +61,5 @@ y = transpose([1,2,3;4,5,6]);
   
   
 #### Assignment/exercise:
--Repeated the screening task on a Windows OS
+- Repeated the screening task on a Windows OS
 Note: Completed draft, need to check about the gcc version etc properly.
