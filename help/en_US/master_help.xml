@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book [
 <!--Begin Entities-->
-<!ENTITY ac23e07225979af3c73d8cc81bcc1ff77 SYSTEM "/home/somayaji/Scilab6-Test-Toolbox/help/en_US/add.xml">
-<!ENTITY aa2027c837b7df27a45d06257f727e94a SYSTEM "/home/somayaji/Scilab6-Test-Toolbox/help/en_US/multiply.xml">
-<!ENTITY ac7ca74d6e8cfe965b4fa6255d13b23c1 SYSTEM "/home/somayaji/Scilab6-Test-Toolbox/help/en_US/transpose.xml">
+<!ENTITY a5122a717f3068093703adf9bb6949095 SYSTEM "file:///D:/Scilab6-Test-Toolbox/help/en_US/add.xml">
+<!ENTITY a82b51c08a63d433e3ed9f021c68846fc SYSTEM "file:///D:/Scilab6-Test-Toolbox/help/en_US/multiply.xml">
+<!ENTITY a3b1cd0ee2a6e4c798a322ba912e0c2ea SYSTEM "file:///D:/Scilab6-Test-Toolbox/help/en_US/transpose.xml">
 <!--End Entities-->
 ]>
 <book version="5.0-subset Scilab" xml:lang="en_US"
@@ -18,10 +18,10 @@
     <title>test_toolbox</title>
   </info>
 
-<part xml:id='section_18bb225fd1d24c958916a7442a776b55'>
+<part xml:id='section_faca585fad39c95e8014f3b17dc34bbc'>
 <title>test_toolbox</title>
-&ac23e07225979af3c73d8cc81bcc1ff77;
-&aa2027c837b7df27a45d06257f727e94a;
-&ac7ca74d6e8cfe965b4fa6255d13b23c1;
+&a5122a717f3068093703adf9bb6949095;
+&a82b51c08a63d433e3ed9f021c68846fc;
+&a3b1cd0ee2a6e4c798a322ba912e0c2ea;
 </part>
 </book>
