@@ -3,8 +3,13 @@
 
 OS: Ubuntu 18.04.5 LTS<br>
 Scilab: Scilab 6.1.0<br>
-gcc: gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0<br>
+gcc(on ubuntu): gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0<br>
 bash: GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)<br>
+<br>
+OS: Windows 10<br>
+Scilab: Scilab 6.1.0<br>
+gcc(on windows): gcc (GCC) 8.3.0<br>
+
 
 ### Part A:
 
@@ -23,7 +28,7 @@ main.c, trans.c, run.sh and trans.h<br>
 - Loader files (Scilab script) load a toolbox component (or the whole toolbox) in Scilab.
 - "help" folder contains XML help files
 - "test" folder contains the files for Part A
-- The toolbox has been tested on linux sytsem(Ubuntu 18.04.5 LTS)
+- The toolbox has been tested on linux sytsem(Ubuntu 18.04.5 LTS) and Windows 10.
 
 #### Instructions for testing/executing:
 - Clone this repository, "Scilab6-Test-Toolbox" (using `git clone <link>`)
@@ -60,6 +65,6 @@ y = transpose([1,2,3;4,5,6]);
   
   
   
-#### Assignment/exercise:
+### Assignment/exercise:
 - Repeated the screening task on a Windows OS<br>
-- Note: Completed draft, need to check/verify about the gcc version and other stuff properly.
+- Note: Completed draft, works on my system, need to check/verify about the gcc version and other stuff properly.
