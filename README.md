@@ -57,3 +57,9 @@ y = transpose([1,2,3;4,5,6]);
 #### Sample outputs:
 <br>
 <a href="https://drive.google.com/uc?export=view&id=10WjMv6I2H5OGSIVNX4t9UdmhtkW_KQUE"><img src="https://drive.google.com/uc?export=view&id=10WjMv6I2H5OGSIVNX4t9UdmhtkW_KQUE" width="500" height="auto" title="Sample_output" />
+  
+  
+  
+#### Assignment/exercise:
+-Repeated the screening task on a Windows OS
+Note: Completed draft, need to check about the gcc version etc properly.
