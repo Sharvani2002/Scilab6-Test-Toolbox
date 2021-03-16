@@ -9,6 +9,7 @@ bash: GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)<br>
 OS: Windows 10<br>
 Scilab: Scilab 6.1.0<br>
 gcc(on windows): gcc (GCC) 8.3.0<br>
+MinGw toolbox version: 8.3.0<br>
 
 
 ### Part A:
@@ -31,6 +32,9 @@ main.c, trans.c, run.sh and trans.h<br>
 - The toolbox has been tested on linux sytsem(Ubuntu 18.04.5 LTS) and Windows 10.
 
 #### Instructions for testing/executing:
+- Follow this step only if the OS is windows:
+  - Get the compiler downloaded from  ftp://ftp.equation.com/gcc/gcc-8.3.0-64.exe  if not done already.
+  - Download the toolbox from https://atoms.scilab.org/toolboxes/mingw/8.3.0 and ensure that the toolbox loads automatically on restarting Scilab.
 - Clone this repository, "Scilab6-Test-Toolbox" (using `git clone <link>`)
 - To get thirdparty folder:
   - The "thirdparty" folder wont get downloaded as it is ignored by git (present in .gitignore). If it is present in the cloned repository(i.e. "Scilab6-Test-Toolbox"), "delete" it (as the .so files could not be compatible). 
@@ -67,4 +71,4 @@ y = transpose([1,2,3;4,5,6]);
   
 ### Assignment/exercise:
 - Repeated the screening task on a Windows OS<br>
-- Note: Completed draft, works on my system, need to check/verify about the gcc version and other stuff properly.
+
